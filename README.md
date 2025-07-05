@@ -213,3 +213,43 @@ enter the size 10
 7 7 7 7 7 7 7 
 8 8 8 8 8 8 8 8 
 9 9 9 9 9 9 9 9 9 
+
+
+n=int(input("enter the size"))
+for i in range(1, n+1):
+    for j in range(n-i):
+         print(' ',end=' ')
+    for k in range(2*i-1):
+         print("*",end=' ')
+    print()
+'''''''''''output''''''''''''
+enter the size 9
+                * 
+              * * * 
+            * * * * * 
+          * * * * * * * 
+        * * * * * * * * * 
+      * * * * * * * * * * * 
+    * * * * * * * * * * * * * 
+  * * * * * * * * * * * * * * * 
+* * * * * * * * * * * * * * * * * 
+
+
+n=int(input("enter the size"))
+for i in range(n,0,-1):
+    for j in range(n-i):
+         print(' ',end=' ')
+    for k in range(2*i-1):
+         print("*",end=' ')
+    print()
+'''''''''''output''''''''''''
+enter the size 9
+* * * * * * * * * * * * * * * * * 
+  * * * * * * * * * * * * * * * 
+    * * * * * * * * * * * * * 
+      * * * * * * * * * * * 
+        * * * * * * * * * 
+          * * * * * * * 
+            * * * * * 
+              * * * 
+                * 
